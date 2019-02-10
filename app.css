@@ -1,0 +1,108 @@
+body {
+    background-color: #f8f8ff;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #1b1a19;
+    color: #f8f8ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 64px 0 64px;
+}
+
+header a {
+    font-family: 'Staatliches', cursive;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 3px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #f8f8f8;
+}
+
+header img {
+    height: 40px;
+}
+
+section.hero {
+    padding: 120px 40px 120px 40px;
+    background-color: #eeeeee;
+    color: #f8f8ff;
+    text-shadow: 0 0 10px rgba(235, 235, 235, 0.2);
+    text-align: center;
+    background-image: url("images/hero-leaves.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-family: 'Staatliches', cursive;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 7px;
+    font-size: 70px;
+}
+
+section.grid {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 32px;
+    align-items: center;
+}
+
+section.grid h2, p {
+    margin: 20px 330px 20px 50px;
+}
+
+section.grid img {
+    width: 100%;
+}
+
+section.hero.portfolio {
+    background-image: url("images/hero-portfolio.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: -20px;
+}
+
+section.portfolio h2 {
+    font-size: 32px;    
+}
+section.portfolio a {
+    font-size: 20px;    
+}
+
+.button {
+    display: inline-block;
+    color: #f8f8ff;
+    border: 1px solid #f8f8ff;
+    padding: 15px 30px 15px 30px;
+    text-decoration: none;
+    box-shadow: 1px 2px #f8f8ff;
+    transition: ease 0.5s;
+}
+
+.button:hover {
+    color: #55ad67;
+    transition: ease 0.5s;
+    box-shadow: 4px 5px #f8f8ff;
+}
+
+footer {
+    height: 80px;
+    background-color: #1b1a19;
+    color: #f8f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    height: 40px;
+    padding-left: 15px;
+}
