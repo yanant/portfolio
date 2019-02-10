@@ -106,3 +106,94 @@ footer img {
     height: 40px;
     padding-left: 15px;
 }
+
+/* portfolio.html */
+
+section.work {
+    background-image: url("images/hero-pencils.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+  .filters {
+    margin-bottom: 20px;
+  }
+  
+  .filters li {
+    display: inline;
+  }
+  
+  .show-filters {
+    display: none;
+  }
+  
+  .filters a {
+    color: #333;
+    font-size: 16px;
+    margin-right: 15px;
+    text-decoration: none;
+  }
+  
+  .filters .selected {
+       font-weight: 700;
+    border-bottom: solid 3px #FEEA34;
+    padding-bottom: 1px;
+  }
+  
+  .photo {
+    width: 100%;
+    position: relative;
+  }
+  
+  .photos {
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 52px;
+    max-width: 800px;
+  }
+  
+  .overlay {
+    opacity: 0;
+    position: absolute;
+    background-color: rgba(254, 234, 52, 0.69);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 15px;
+    transition: opacity 0.5s ease;
+  }
+  
+  .photo:hover .overlay {
+    opacity: 1;
+  }
+  
+  .photo h4, .photo p {
+    font-weight: 700;
+  }
+  
+  .photo p {
+    font-size: 36px;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+  }
+  
+  .photo h4 {
+    font-size: 18px;
+  }
+  
+  .filters .show-filters {
+    color: #BFBFB7;
+  }
