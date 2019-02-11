@@ -10,8 +10,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
-    padding: 0 64px 0 64px;
+    height: 100px;
+    padding: 0 50px 0 50px;
 }
 
 header a {
@@ -19,13 +19,20 @@ header a {
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 3px;
-    font-size: 30px;
+    font-size: 24px;
     text-decoration: none;
     color: #f8f8f8;
 }
 
 header img {
     height: 40px;
+    padding-top: 10px;
+    transition: ease 0.5s;
+}
+
+header img:hover {
+    transition: ease 0.5s;
+    transform: rotate(-30deg);
 }
 
 section.hero {
@@ -55,8 +62,9 @@ section.grid {
     align-items: center;
 }
 
-section.grid h2, p {
-    margin: 20px 330px 20px 50px;
+.grid-text {
+    padding-right: 200px;
+    padding-left: 100px;
 }
 
 section.grid img {
@@ -100,100 +108,109 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 14px;
 }
 
 footer img {
-    height: 40px;
+    height: 30px;
     padding-left: 15px;
 }
 
-/* portfolio.html */
+/* Portfolio page */
 
 section.work {
-    background-image: url("images/hero-pencils.jpg");
-    background-size: cover;
-    background-position: center;
-    color: #333;
+  background-image: url("images/hero-pencils.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  height: 400px;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-  }
+section.work h1 {
+    font-size: 120px;
+}
 
+.work-intro p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 200px;
+  font-size: 18px;
+  font-weight: 700;
+}
 
+.work-button {
+  display: inline-block;
+  color: #333;
+  border: 1px solid #333;
+  padding: 15px 30px 15px 30px;
+  text-decoration: none;
+  box-shadow: 1px 2px #333;
+  transition: ease 0.5s;
+  margin-top: 20px;
+}
 
-  .filters {
-    margin-bottom: 20px;
-  }
-  
-  .filters li {
-    display: inline;
-  }
-  
-  .show-filters {
-    display: none;
-  }
-  
-  .filters a {
-    color: #333;
-    font-size: 16px;
-    margin-right: 15px;
-    text-decoration: none;
-  }
-  
-  .filters .selected {
-       font-weight: 700;
-    border-bottom: solid 3px #FEEA34;
-    padding-bottom: 1px;
-  }
-  
-  .photo {
-    width: 100%;
-    position: relative;
-  }
-  
-  .photos {
-    margin-bottom: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 52px;
-    max-width: 800px;
-  }
-  
-  .overlay {
-    opacity: 0;
-    position: absolute;
-    background-color: rgba(254, 234, 52, 0.69);
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    padding: 15px;
-    transition: opacity 0.5s ease;
-  }
-  
-  .photo:hover .overlay {
-    opacity: 1;
-  }
-  
-  .photo h4, .photo p {
-    font-weight: 700;
-  }
-  
-  .photo p {
-    font-size: 36px;
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-  }
-  
-  .photo h4 {
-    font-size: 18px;
-  }
-  
-  .filters .show-filters {
-    color: #BFBFB7;
-  }
+.work-button:hover {
+  transition: ease 0.5s;
+  box-shadow: 4px 6px #333;
+  background-color: #e3ab02;
+}
+
+@media (max-width:1650px) {
+    .grid-text {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    section.work  {
+        height: 300px;
+    }
+
+    .work-intro  {
+        padding-right: 100px;
+        padding-left: 100px;
+        padding-top: 20px;
+    }
+}
+
+@media(max-width:850px) {
+    section.grid {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        align-items: center;
+    }
+
+    section.work  {
+        height: 250px;
+    }
+}
+
+@media(max-width:590px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    header a {
+        font-size: 16px;
+    }
+
+    header {
+        padding : 0 20px 0 20px;
+    }
+
+    section.work h1 {
+        font-size: 40px;
+    }
+
+    section.work  {
+        height: 150px;
+    }
+
+    .work-intro {
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+}

@@ -8,64 +8,87 @@
     <link rel="stylesheet" href="app.css">
     <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700" rel="stylesheet">
 </head>
 <body>
     <header>
         <a href="/"><img src="/images/ay-logo-white.png" alt="Anthony Yannos"></a>
-        <a href="contact.html">Contact</a>    
+        <a href="contact.html" class="button">Contact</a>    
     </header>    
 
     <section class="hero work">
             <h1>Portfolio</h1>
         </section>
-    
-<div class="container">    
-    <nav class="filters">
-            <a href="#" class="show-filters">Show filters</a>
-            <ul class="filters-list">
-                <li><a href="all.html" class="selected" data-filters=".photo">ALL</a></li>
-                <li><a href="personal.html" data-filters=".personal">Personal</a></li>
-                <li><a href="superhi.html" data-filters=".superhi">SuperHi</a></li>
-                <li><a href="freecodecamp.html" data-filters=".freecodecamp">FreeCodeCamp</a></li>
-            </ul>
-    </nav>
-</div>
 
-    <section class="photos">
-        <div class="container-main">
-            <div class="photo personal">
-                <div class="overlay">
-                    <h4>Website 1</h4>
-                    <p>Personal</p>
+        <section class="work-intro">
+                <p>Thanks for stopping by my portfolio page. Although not all my work, here are a few curated projects to show what I can do.</p> 
+        </section>
+ 
+        <section class="grid">
+                <div class="grid-image">
+                    <img src="images/northern-doggos.png">
                 </div>
-                <img src="/images/northern-doggos.png">
+                <div class="grid-text">
+                    <h2>Northern Doggos</h2>
+                    <ul>
+                        <li><b>Technology stack:</b> HTML5, CSS3</li>
+                        <li><b>What makes this project interesting:</b> Sticky scrolling effect to keep an image in place on the screen while scrolling through the other half of the screen's text.</li>
+                        <li><b>Why I made this project:</b> I love dogs.</li>
+                        <a href="portfolio.html" class="work-button">View project</a>
+                    </ul>
+                </div>
+
+                    <div class="grid-text">
+                        <h2>Interior Weekly</h2>
+                        <ul>
+                                <li><b>Technology stack:</b> HTML5, CSS3, JavaScript and jQuery</li>
+                                <li><b>What makes this project interesting:</b> Background colour changes on scroll to fade in and out of different colours. On top of this, a progress bar at the top of the window to show the user's scrolling progress down the screen.</li>
+                                <li><b>Why I made this project:</b> To see how subtle changes to colour can evoke different emotions with different imagery.</li>
+                                <a href="portfolio.html" class="work-button">View project</a>
+                            </ul>
+                        </div>
+
+                    <div class="grid-image">
+                            <img src="images/interior-weekly.png">
+                        </div>
+
+                        <div class="grid-image">
+                            <img src="images/sally-hart.png">
+                        </div>
+                        <div class="grid-text">
+                            <h2>Sally Hart Photography</h2>
+                            <ul>
+                                    <li><b>Technology stack:</b> HTML5, CSS3, JavaScript and jQuery</li>
+                                    <li><b>What makes this project interesting:</b> Using a lightbox effect for expanding images upon click, this project is a photographers dream.</li>
+                                    <li><b>Why I made this project:</b> A solution to a simple and elegant photography portfolio.</li>
+                                    <a href="portfolio.html" class="work-button">View project</a>
+                                </ul>        
             </div>
-            <div class="photo personal">
-                    <div class="overlay">
-                        <h4>Website 1</h4>
-                        <p>Personal</p>
-                    </div>
-                    <img src="/images/northern-doggos.png">
-                </div>
-                <div class="photo superhi">
-                        <div class="overlay">
-                            <h4>Website 1</h4>
-                            <p>Personal</p>
-                        </div>
-                        <img src="/images/northern-doggos.png">
-                    </div>
-                    <div class="photo freecodecamp">
-                            <div class="overlay">
-                                <h4>Website 1</h4>
-                                <p>Personal</p>
-                            </div>
-                            <img src="/images/northern-doggos.png">
-                        </div>
-        </div>
-    </section>
 
-    <script src="jquery.js"></script>
-    <script src="app.js"></script>
+                            <div class="grid-text">
+                                <h2>Portfolio Website</h2>
+                                <ul>
+                                        <li><b>Technology stack:</b> HTML5, CSS3, JavaScript and jQuery</li>
+                                        <li><b>What makes this project interesting:</b> Flexbox grid to display work items, along with JavaScript filters to toggle between types of work.</li>
+                                        <li><b>Why I made this project:</b> To test the limits of minimal design and fucntional programming.</li>
+                                        <a href="portfolio.html" class="work-button">View project</a>
+                                    </ul>                                  
+                                </div>
+                            <div class="grid-image">
+                                    <img src="images/lulu.png">
+                                </div>
+        </section>
 
+                        <section class="hero portfolio">
+                                <h2>Want to know more?</h2>
+                                <a href="portfolio.html" class="button">View my resume</a>
+                            </section>
+
+                            <footer>
+                                    <h2>Let's connect:</h2>
+                                    <a href="https://twitter.com/AnthonyYannos"><img src="/images/twitter-icon.png" alt="twitter"></a>
+                                    <a href="https://www.linkedin.com/in/anthony-yannos/"><img src="/images/linkedin-icon.png" alt="linkedin"></a>
+                                </footer>
+    
 </body>
 </html>
